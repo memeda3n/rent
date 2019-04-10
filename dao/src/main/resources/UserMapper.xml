@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinyan.face.acl.dal.mapper.LoginRecordMapper">
+    <resultMap id="BaseResultMap" type="com.xinyan.face.acl.dal.model.LoginRecordDO">
+        <id column="id"                                     jdbcType="BIGINT"              property="id"/>
+        <result column="name"                         jdbcType="VARCHAR"              property="name"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+            id,
+            `name`
+  </sql>
+
+    <!-- 新增登录记录信息 -->
+    <insert id="insert" parameterType="com.xinyan.face.acl.dal.model.LoginRecordDO" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO T_LOGIN_INFO (
+            id,
+            `name`)
+        VALUES (
+            #{id},
+            #{name})
+    </insert>
+
+
+</mapper>

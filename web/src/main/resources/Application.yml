@@ -1,0 +1,4 @@
+spring:
+  logging:
+      config: log4j2.xml
+      level: debug

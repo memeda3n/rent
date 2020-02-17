@@ -13,6 +13,7 @@
         <module>service</module>
         <module>dao</module>
         <module>web</module>
+        <module>java_exercise</module>
     </modules>
     <properties>
         <lombok.version>1.16.8</lombok.version>

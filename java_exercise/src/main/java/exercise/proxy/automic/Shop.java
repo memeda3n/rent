@@ -1,4 +1,4 @@
-package cn.knowledge.learn.proxy.automic;
+package exercise.proxy.automic;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

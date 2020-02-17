@@ -1,4 +1,4 @@
-package cn.knowledge.learn.proxy.automic;
+package exercise.proxy.automic;
 
 public interface Product {
 

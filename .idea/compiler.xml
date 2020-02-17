@@ -10,6 +10,7 @@
         <module name="common" />
         <module name="service" />
         <module name="dao" />
+        <module name="java_exercise" />
         <module name="controller" />
       </profile>
     </annotationProcessing>

@@ -1,4 +1,4 @@
-package cn.knowledge.learn.proxy.staticProxy;
+package exercise.proxy.staticProxy;
 
 public class KLok {
 

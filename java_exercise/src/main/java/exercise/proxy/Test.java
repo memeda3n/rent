@@ -1,7 +1,8 @@
-package cn.knowledge.learn;
+package exercise.proxy;
 
-import cn.knowledge.learn.proxy.staticProxy.Beer;
-import cn.knowledge.learn.proxy.staticProxy.KLok;
+
+import exercise.proxy.staticProxy.Beer;
+import exercise.proxy.staticProxy.KLok;
 
 public class Test {
 
@@ -11,7 +12,6 @@ public class Test {
 
         KLok lok = new KLok(beer);
         lok.consume();
-
 
     }
 

@@ -13,7 +13,7 @@ public class LocationInfoController {
 
     @GetMapping("/test")
     public ModelMap test(){
-
+        System.out.println("dfsfsdf");
         return new ModelMap();
     }
 

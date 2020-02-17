@@ -1,4 +1,4 @@
-package cn.knowledge.learn.proxy.automic;
+package exercise.proxy.automic;
 
 import cn.knowledge.learn.proxy.staticProxy.Beer;
 import cn.knowledge.learn.proxy.staticProxy.KLok;

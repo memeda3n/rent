@@ -13,10 +13,12 @@
         <module>service</module>
         <module>dao</module>
         <module>web</module>
+        <module>java_knowledge</module>
         <module>java_exercise</module>
     </modules>
     <properties>
         <lombok.version>1.16.8</lombok.version>
+        <fastjson.version>1.2.25</fastjson.version>
     </properties>
 
     <parent>
@@ -64,6 +66,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

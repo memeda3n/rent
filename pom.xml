@@ -13,12 +13,13 @@
         <module>service</module>
         <module>dao</module>
         <module>web</module>
-        <module>java_knowledge</module>
         <module>java_exercise</module>
     </modules>
     <properties>
         <lombok.version>1.16.8</lombok.version>
         <fastjson.version>1.2.25</fastjson.version>
+        <jdk.version>1.8</jdk.version>
+        <project.build.encoding>UTF-8</project.build.encoding>
     </properties>
 
     <parent>
@@ -79,8 +80,14 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <encoding>${project.build.encoding}</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>

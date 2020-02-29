@@ -1,7 +1,5 @@
 package exercise.proxy.automic;
 
-import cn.knowledge.learn.proxy.staticProxy.Beer;
-import cn.knowledge.learn.proxy.staticProxy.KLok;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

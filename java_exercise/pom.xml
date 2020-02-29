@@ -11,5 +11,8 @@
 
     <artifactId>java_exercise</artifactId>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>

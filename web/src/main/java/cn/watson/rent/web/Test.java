@@ -35,7 +35,7 @@ public class Test {
 //        System.out.println(s);
 
         for(int i=0;i<5;i++){
-            log.error("test================");
+//            log.error("test================");
         }
     }
 

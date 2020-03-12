@@ -3,6 +3,10 @@ package exercise.proxy.automic;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+
+/**
+ * 动态代理实现AOP
+ */
 public class Shop implements InvocationHandler {
 
     private Object object;

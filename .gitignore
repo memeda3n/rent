@@ -1,6 +1,6 @@
 ./logs
 
-./.idea
+./.idea/
 ./out
 
 ./rent-root.iml

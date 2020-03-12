@@ -1,7 +1,6 @@
-./logs
-
-./.idea/
-./out
+logs
+.idea/
+out
 
 ./rent-root.iml
 */target

@@ -34,14 +34,15 @@ public class Test {
 //        String s = jedis.get("a");
 //        System.out.println(s);
 
-        for(int i=0;i<5;i++){
+        for(int i=0;i<1;i++){
 //            log.error("test================");
+            System.out.println("dfsdfsd");
         }
     }
 
     @GetMapping("/test1")
     public ModelMap test(){
-
+        System.out.println("test");
         return new ModelMap();
     }
 }

@@ -3,9 +3,7 @@ package cn.watson.rent.web;
 import cn.watson.rent.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -13,7 +11,7 @@ import javax.annotation.Resource;
 @RequestMapping("test")
 @Slf4j
 public class Test {
-//    @Resource
+    //    @Resource
 //    User user;
     @Resource
     private UserService userService;
@@ -34,15 +32,24 @@ public class Test {
 //        String s = jedis.get("a");
 //        System.out.println(s);
 
-        for(int i=0;i<1;i++){
+        for (int i = 0; i < 1; i++) {
 //            log.error("test================");
             System.out.println("dfsdfsd");
         }
     }
 
     @GetMapping("/test1")
-    public ModelMap test(){
+    public ModelMap test() {
         System.out.println("test");
         return new ModelMap();
     }
+
+
+    @PostMapping("/learn")
+    public String learn(@RequestBody String name) {
+        System.out.println(name);
+        return name + "========";
+    }
+
+
 }

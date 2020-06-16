@@ -19,8 +19,18 @@ public class Student {
     }
 
     public String getName() {
-        return "jj";
+        return "名称是"+name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public String getAddr() {
+        return addr;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
+    }
 }

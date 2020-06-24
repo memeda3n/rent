@@ -5,6 +5,8 @@ import org.springframework.util.StringUtils;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Layer1 {
 
@@ -55,7 +57,6 @@ class Test {
                 throw new Exception();
             }
             String indexStr = str.substring(left + 1);
-            str = str.substring(0, left);
             int right = indexStr.indexOf("]");
             if (right < 0) {
                 throw new Exception();
@@ -87,26 +88,56 @@ class Test {
         return obj;
     }
 
+    private Object handleArray() {
+
+
+        return null;
+    }
+
+    private List getIndex(String s) {
+//        String s = "layer3[0][1][2][3][4]";
+        String regex = "\\[(.*?)]+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher m = pattern.matcher(s);
+        List<Integer> list = new ArrayList<>();
+        while (m.find()) {
+            System.out.println(m.group(1));
+        }
+        return list;
+    }
+
 
     public static void main(String[] args) throws Exception {
-        Layer1 layer1 = new Layer1();
-        Layer2 layer2 = new Layer2();
-        Layer3 layer3 = new Layer3();
-        Layer4 layer4 = new Layer4();
-        Layer4 layer4_1 = new Layer4();
-        layer1.layer2 = layer2;
-        List<Layer3> layer3s = new ArrayList<>();
-        layer3s.add(layer3);
-        List<Layer4> layer4s = new ArrayList<>();
-        layer4s.add(layer4);
-        layer4s.add(layer4_1);
-        layer4_1.val = 1;
-        layer3.layer4 = layer4s;
-        layer2.layer3 = layer3s;
-        layer4.val = 1000;
-        Test test = new Test();
+//        Layer1 layer1 = new Layer1();
+//        Layer2 layer2 = new Layer2();
+//        Layer3 layer3 = new Layer3();
+//        Layer4 layer4 = new Layer4();
+//        Layer4 layer4_1 = new Layer4();
+//        layer1.layer2 = layer2;
+//        List<Layer3> layer3s = new ArrayList<>();
+//        layer3s.add(layer3);
+//        List<Layer4> layer4s = new ArrayList<>();
+//        layer4s.add(layer4);
+//        layer4s.add(layer4_1);
+//        layer4_1.val = 1;
+//        layer3.layer4 = layer4s;
+//        layer2.layer3 = layer3s;
+//        layer4.val = 1000;
+//        Test test = new Test();
+//
+//        System.out.println(test.getPath(layer1, " layer1.layer2.layer3[0].layer4[1].val"));
 
-        System.out.println(test.getPath(layer1, " layer1.layer2.layer3[0].layer4[1].val"));
+
+        String s = "layer3[0][1][2][3][4]";
+
+        String regex = "\\[(.*?)]+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher m = pattern.matcher(s);
+
+        for (int i = 0; m.find(); i++) {
+            System.out.println(m.group(1));
+        }
+
 
     }
 }

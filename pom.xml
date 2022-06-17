@@ -17,7 +17,7 @@
     </modules>
     <properties>
         <lombok.version>1.16.8</lombok.version>
-        <fastjson.version>1.2.25</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <jdk.version>1.8</jdk.version>
         <project.build.encoding>UTF-8</project.build.encoding>
     </properties>
